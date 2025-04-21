@@ -12,5 +12,5 @@ sudo ntpdate <IP_ADDRESS>
 
 ## Time Skew Using ntpdate
 ```
-faketime "$(rdate -n 10.129.81.110 -p | awk '{print $2, $3, $4}' | date -f - "+%Y-%m-%d %H:%M:%S")" zsh
+faketime "$(rdate -n <TARGET> -p | awk '{print $2, $3, $4}' | date -f - "+%Y-%m-%d %H:%M:%S")" zsh
 ```

